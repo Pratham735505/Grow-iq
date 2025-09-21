@@ -10,6 +10,7 @@ export default function Contact() {
         <h1 className="text-4xl font-bold text-blue-600">Contact Us</h1>
         <p className="mt-3 text-gray-600">
           Have any questions? Fill out the form below or reach us directly on WhatsApp.
+          Address : Kanchanpur, Medical College Road, Gorakhpur, UP
         </p>
       </div>
 

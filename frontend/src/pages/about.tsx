@@ -13,12 +13,12 @@ export default function About() {
 
   const teachers = [
     {
-      name: "Engineer A.K. Nagvanshi Sir",
-      desc: "Highly experienced in teaching with a strong background in mentoring students for both academic and competitive excellence.",
+      name: "Mechanical Engineer A.K. Nagvanshi Sir",
+      desc: "6+ years of Experience in teaching with a strong background in mentoring students for both academic and competitive excellence.",
     },
     {
-      name: "Engineer Arjun Sir",
-      desc: "Expert in guiding students with innovative teaching methods and years of experience in exam-focused preparation.",
+      name: "Mechanical Engineer Arjun Sir",
+      desc: "Expert in guiding students with innovative teaching methods and 8 + years of experience in exam-focused preparation, with strong background in Polytechnic and Mechanical engineering",
     },
   ];
 

@@ -20,7 +20,7 @@ const Header = () => {
     {
       title: "Expert Faculty",
       tagline: "Er. ARJUN SIR & Er. A.K. NAGVANSHI SIR",
-      subtitle: "Patna - Kanchanpur Medical Road, Gorakhpur",
+      subtitle: "Uttar Pradesh - Kanchanpur Medical Road, Gorakhpur",
       motto: "Guiding You Towards Your Goals"
     }
   ];

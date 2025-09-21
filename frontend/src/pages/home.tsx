@@ -47,16 +47,17 @@ export default function Home() {
 
           {/* Small Trust Line */}
           <p className="text-gray-600 text-sm md:text-base max-w-xl">
-            Trusted by hundreds of students for quality coaching and results.
+            Trusted by students for quality coaching and results.
           </p>
         </div>
 
         {/* Right: Image */}
         <div className="flex justify-center">
           <img
-            src="https://elearn.nptel.ac.in/wp-content/uploads/2024/01/Effective-Teaching.jpg"
+            src="/photo.jpeg"
             alt="Education illustration"
             className="w-full max-w-md"
+            title="Our A.K Nagvanshi Sir"
           />
         </div>
       </main>
