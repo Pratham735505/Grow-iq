@@ -1,5 +1,3 @@
-"use client"; // if you're using Next.js App Router
-
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -17,7 +15,7 @@ export default function About() {
       desc: "6+ years of Experience in teaching with a strong background in mentoring students for both academic and competitive excellence.",
     },
     {
-      name: "Mechanical Engineer Arjun Sir",
+      name: "Electrical Engineer Arjun Sir",
       desc: "Expert in guiding students with innovative teaching methods and 8 + years of experience in exam-focused preparation, with strong background in Polytechnic and Mechanical engineering",
     },
   ];
