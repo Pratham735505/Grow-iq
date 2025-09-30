@@ -1,21 +1,27 @@
+import { FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+
 export default function Contact() {
-  // Replace with your WhatsApp number (include country code, no + or spaces)
-  const whatsappNumber = "+919506349789"; 
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  // WhatsApp Numbers (no + or spaces)
+  const whatsappAbhishek = "919506349789";
+  const whatsappArjun = "917275309690";
+
+  const whatsappLinkAbhishek = `https://wa.me/${whatsappAbhishek}`;
+  const whatsappLinkArjun = `https://wa.me/${whatsappArjun}`;
 
   return (
     <div className="p-8 w-full min-h-screen bg-gray-50 flex flex-col items-center">
       {/* Page Header */}
-      <div className="max-w-3xl text-center mb-12">
+      <div className="max-w-3xl text-center mb-12 animate-fadeIn">
         <h1 className="text-4xl font-bold text-blue-600">Contact Us</h1>
         <p className="mt-3 text-gray-600">
-          Have any questions? Fill out the form below or reach us directly on WhatsApp.
-          Address : Kanchanpur, Medical College Road, Gorakhpur, UP
+          Have any questions? Fill out the form below or reach us directly.
+          <br />
+          <span className="font-medium">Address:</span> Kanchanpur, Medical College Road, Gorakhpur, UP
         </p>
       </div>
 
       {/* Contact Form */}
-      <div className="w-full max-w-2xl bg-white shadow-md rounded-lg p-8 mb-12">
+      <div className="w-full max-w-2xl bg-white shadow-md rounded-lg p-8 mb-12 animate-slideUp">
         <form className="space-y-6">
           {/* Name */}
           <div>
@@ -57,20 +63,61 @@ export default function Contact() {
         </form>
       </div>
 
-      {/* WhatsApp Banner */}
-      <div className="w-full max-w-2xl bg-green-500 text-white rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center justify-between">
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-2xl font-semibold">Prefer WhatsApp?</h2>
-          <p className="text-white/90">Chat with us instantly on WhatsApp.</p>
+      {/* Contact Info Cards */}
+      <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Abhishek */}
+        <div className="bg-white shadow-md rounded-lg p-6 animate-slideUp">
+          <h2 className="text-2xl font-semibold text-blue-600">Abhishek</h2>
+          <div className="mt-4 space-y-3 text-gray-700">
+            <p className="flex items-center gap-3">
+              <FaEnvelope className="text-blue-600" />
+              <a
+                href="mailto:abhisheknagbanshi000@gmail.com"
+                className="hover:underline"
+              >
+                abhisheknagbanshi000@gmail.com
+              </a>
+            </p>
+            <p className="flex items-center gap-3">
+              <FaPhoneAlt className="text-blue-600" /> +91 95063 49789
+            </p>
+          </div>
+          <a
+            href={whatsappLinkAbhishek}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-2 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition"
+          >
+            <FaWhatsapp /> WhatsApp
+          </a>
         </div>
-        <a
-          href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-2 bg-white text-green-600 font-medium rounded-md hover:bg-gray-100 transition"
-        >
-          Contact on WhatsApp
-        </a>
+
+        {/* Arjun Sir */}
+        <div className="bg-white shadow-md rounded-lg p-6 animate-slideUp">
+          <h2 className="text-2xl font-semibold text-blue-600">Arjun Sir</h2>
+          <div className="mt-4 space-y-3 text-gray-700">
+            <p className="flex items-center gap-3">
+              <FaEnvelope className="text-blue-600" />
+              <a
+                href="mailto:ay13111993@gmail.com"
+                className="hover:underline"
+              >
+                ay13111993@gmail.com
+              </a>
+            </p>
+            <p className="flex items-center gap-3">
+              <FaPhoneAlt className="text-blue-600" /> +91 72753 09690
+            </p>
+          </div>
+          <a
+            href={whatsappLinkArjun}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-2 bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition"
+          >
+            <FaWhatsapp /> WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   );
