@@ -1,5 +1,5 @@
 // Components/Studentarea/Timetable.tsx
-import React from "react";
+
 
 const timetableData = [
   { day: "Monday", subject: "Mathematics", teacher: "Engineer A.K. Nagvanshi", time: "9:00 AM - 10:00 AM" },

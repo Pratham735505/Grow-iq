@@ -1,5 +1,5 @@
 // Components/Studentarea/Dashboard.tsx
-import React from "react";
+
 
 const studentData = {
   name: "John Doe",

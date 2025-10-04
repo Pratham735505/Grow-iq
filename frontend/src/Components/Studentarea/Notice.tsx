@@ -1,5 +1,5 @@
 // Components/Studentarea/Notice.tsx
-import React from "react";
+
 
 const notices = [
   { date: "2025-10-01", title: "Exam Schedule Released", description: "The schedule for the monthly exams is now available. Check the timetable carefully." },
