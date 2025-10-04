@@ -1,17 +1,25 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./Components/navbar";
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout";
 import Body from "./pages/body";
-import Footer from "./Components/footer";
+import Profile from "./pages/Profile";
+import NotFound from "./pages/notfound";
+
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow pt-16">
-          <Body />
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        {/* Default layout routes */}
+        <Route element={<Layout />}>
+          <Route path="/*" element={<Body />} />
+        </Route>
+
+        {/* Standalone Profile page with its own layout */}
+        <Route path="/profile/*" element={<Profile />} />
+
+        {/* Catch-all for wrong routes outside layout */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
   );
 }

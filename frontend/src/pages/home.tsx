@@ -7,7 +7,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      {/* Hero Section */}
+      
 <main className="container mx-auto px-6 py-16 flex flex-col gap-12 items-center justify-center">
   
   {/* Left: Text content */}
