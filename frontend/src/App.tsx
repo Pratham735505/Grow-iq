@@ -4,7 +4,7 @@ import Layout from "./Components/Layout";
 import Body from "./pages/body";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/notfound";
-
+import AdminSection from "./pages/admin/Admin";
 export default function App() {
   return (
     <Router>
@@ -17,6 +17,8 @@ export default function App() {
         {/* Standalone Profile page with its own layout */}
         <Route path="/profile/*" element={<Profile />} />
 
+         {/* Admin section */}
+        <Route path="/admin/*" element={<AdminSection />} />
         {/* Catch-all for wrong routes outside layout */}
         <Route path="*" element={<NotFound />} />
       </Routes>
