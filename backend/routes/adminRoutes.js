@@ -13,7 +13,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/api/admin/google/callback",
+      callbackURL: process.env.GOOGLE_CALLBACK_URL,
     },
     async (_, __, profile, done) => {
       try {
@@ -38,7 +38,7 @@ adminRouter.get(
   passport.authenticate("google", { session: false }),
   (req, res) => {
     const token = generateToken(req.user);
-    res.redirect(`${process.env.FRONTEND_URL}/login?token=${token}`);
+    res.redirect(`${process.env.FRONTEND_URL}/admin/login?token=${token}`);
   }
 );
 

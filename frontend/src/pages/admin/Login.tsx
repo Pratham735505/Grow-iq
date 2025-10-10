@@ -9,6 +9,7 @@ export default function Login() {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const token = params.get("token");
+    console.log(token);
     if (token) {
       saveToken(token);
       navigate("/admin/dashboard");
@@ -17,6 +18,7 @@ export default function Login() {
 
   const googleLogin = () => {
     window.location.href = "http://localhost:3000/api/admin/google";
+    
   };
 
   return (
