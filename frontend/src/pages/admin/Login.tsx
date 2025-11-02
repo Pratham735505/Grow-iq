@@ -17,7 +17,7 @@ export default function Login() {
   }, [location, navigate]);
 
   const googleLogin = () => {
-    window.location.href = "http://localhost:3000/api/admin/google";
+    window.location.href = "https://grow-iq.onrender.com/api/admin/google";
     
   };
 
